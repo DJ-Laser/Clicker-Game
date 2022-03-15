@@ -9,14 +9,19 @@ Resources
 Buildings
     *paperprinter
       name:Paper Printer
-      desc:A old paper printer that produces 0.1 papers per second.<//><b>Effect:</b><.>Produces 1 paper every 10 seconds.
+      desc:A old paper printer that produces 0.1 papers per second.<//><b>Effect:</b><.>Produces 1 paper per 10 seconds.
       cost:15 papers
       on tick:yield 0.1 papers
     *joe
       name:Drunken Joe
-      desc:The homeless drunk dude that lives next to the pizzeria and produces 1 papers per second.<//><b>Effect:</b><.>Produces 1 paper every 1 seconds.
+      desc:The homeless drunk dude that lives next to the pizzeria and produces 1 papers per second.<//><b>Effect:</b><.>Produces 1 paper per second.
       cost:100 papers
       on tick:yield 1 papers
+      *laserjet
+      name:LaserJet Printer
+      desc:Gud fasst printr.<//><b>Effect:</b><.>Produces 10 papers per second.
+      cost:50 papers
+      on tick:yield 10 papers
  
  
 Settings
