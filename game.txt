@@ -42,5 +42,5 @@ Buttons
 CSS
   #game.filtersOn .thing.cantAfford.notOwned
   {
-    filter:blur(3px);
+    filter:contrast(0) brightness(0);
   }
