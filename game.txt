@@ -1,0 +1,46 @@
+Let's make a game!
+    name:Paper Clicker
+ 
+Resources
+    *paper|papers
+      name: papers| paper
+      desc:A nice fresh piece of paper.
+ 
+Buildings
+    *paperprinter
+      name:Paper Printer
+      desc:A old paper printer that produces 0.1 papers per second.<//><b>Effect:</b><.>Produces 1 paper every 10 seconds.
+      cost:15 papers
+      on tick:yield 0.1 papers
+    *joe
+      name:Drunken Joe
+      desc:The homeless drunk dude that lives next to the pizzeria and produces 1 papers per second.<//><b>Effect:</b><.>Produces 1 paper every 1 seconds.
+      cost:100 papers
+      on tick:yield 1 papers
+ 
+ 
+Settings
+    *paperprinter
+      building cost increase:115%
+      spritesheet:icons, 48 by 48, https://freepngimg.com/thumb/printer/21987-8-printer-image-thumb.png
+    *background
+      tiling background:https://wallpaperaccess.com/full/2578748.jpg
+      stylesheet:stuff/bigBlue.css
+ 
+Buttons
+    *printerButton
+        name:Print a paper
+        desc:Click this printer for more papers!
+        on click:anim icon wobble
+        on click:yield 1 paper
+        icon:https://freepngimg.com/thumb/printer/21987-8-printer-image-thumb.png no text
+        class:bigButton hasFlares
+        icon class:shadowed
+        tooltip origin:bottom
+        tooltip class:red
+ 
+CSS
+  #game.filtersOn .thing.cantAfford.notOwned
+  {
+    filter:blur(3px);
+  }
