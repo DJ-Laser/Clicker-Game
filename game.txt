@@ -17,6 +17,11 @@ Buildings
 	  desc:The homeless drunk dude that lives next to the pizzeria.<//><b>Effect:</b><.>Produces 1 paper per second.
 	  cost:100 papers
 	  on tick:yield 1 papers
+	  *laserJet
+	  name:LaserJet Printer
+	  desc:A fast printer aquired by tess than legal means
+	  cost:200 papers
+	  on tick:yield 100 papers
 
 
 Settings
